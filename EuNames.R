@@ -51,41 +51,41 @@ EuPoints <- function() {
   Names = EuNames()
   L = length(Names)
   
-  Finland <- c(0,0)
-  Norway <- c(0,0)
-  Sweden <- c(0,0)
-  Denmark <- c(0,0)
-  Germany <- c(0,0)
-  Netherlands <- c(0,0)
-  Belgium <- c(0,0)
-  France <- c(2,49)
-  United_Kingdom <- c(0,0)
-  Ireland <- c(0,0)
-  Spain <- c(0,0)
-  Portugal <- c(0,0)
-  Estonia <- c(0,0)
-  Latvia <- c(0,0)
-  Lithuania <- c(0,0)
-  Poland <- c(0,0)
-  Czech_Republic <- c(0,0)
-  Austria <- c(0,0)
-  Switzerland <- c(0,0)
-  Italy <- c(0,0)
-  Slovenia <- c(0,0)
-  Croatia <- c(0,0)
-  Bosnia <- c(0,0)
-  Serbia <- c(0,0)
-  Albania <- c(0,0)
-  Greece <- c(0,0)
-  Belaruss <- c(0,0)
-  Ukraine <- c(0,0)
-  Slovakia <- c(0,0)
-  Hungary <- c(0,0)
-  Romania <- c(0,0)
-  Bulgaria <- c(0,0)
-  Macedonia <- c(0,0)
-  Turkey <- c(0,0)
-  Moldova <- c(0,0)
+  Finland <- c(28,65)#
+  Norway <- c(14,66)#
+  Sweden <- c(-5,50)
+  Denmark <- c(-5,50)
+  Germany <- c(10,51)#
+  Netherlands <- c(6,53)#
+  Belgium <- c(5,51)#
+  France <- c(2,48)#
+  United_Kingdom <- c(-1,52)#
+  Ireland <- c(-7,53)#
+  Spain <- c(-3,41)#
+  Portugal <- c(-8,39)#
+  Estonia <- c(-5,50)
+  Latvia <- c(-5,50)
+  Lithuania <- c(-5,50)
+  Poland <- c(-5,50)
+  Czech_Republic <- c(-5,50)
+  Austria <- c(-5,50)
+  Switzerland <- c(-5,50)
+  Italy <- c(-5,50)
+  Slovenia <- c(-5,50)
+  Croatia <- c(-5,50)
+  Bosnia <- c(-5,50)
+  Serbia <- c(-5,50)
+  Albania <- c(-5,50)
+  Greece <- c(-5,50)
+  Belaruss <- c(-5,50)
+  Ukraine <- c(-5,50)
+  Slovakia <- c(-5,50)
+  Hungary <- c(-5,50)
+  Romania <- c(-5,50)
+  Bulgaria <- c(-5,50)
+  Macedonia <- c(-5,50)
+  Turkey <- c(35,39)#
+  Moldova <- c(-5,50)
   Russia <- c(0,0)
   
   temp <- rbind(Finland,

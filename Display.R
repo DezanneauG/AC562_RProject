@@ -163,12 +163,12 @@ EuMap <- function(g,donnees) {
   
   # Background map
   map('world',
-      col="#d2d2d2", fill=TRUE, bg="white", lwd=0.05,
-      mar=rep(0,4),border=0, ylim=c(-80,80) 
+      col="#b2b2b2", fill=TRUE, bg="white", lwd=0.05,
+      mar=rep(0,4),border=0, xlim=c(-10,30), ylim=c(35,73) 
   )
   
   # Dot for cities
-  points(x=data$long, y=data$lat, col="slateblue", cex=3, pch=20)
+  points(x=data$long, y=data$lat, col="slateblue", cex=1, pch=20)
   
   # Compute the connection between Buenos Aires and Paris
   #inter <- gcIntermediate(Paris,  Buenos_aires, n=50, addStartEnd=TRUE, breakAtDateLine=F)
