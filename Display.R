@@ -60,7 +60,7 @@ NormalPlot <- function(g_eu) {
   plot(g_eu, 
        edge.width=2, 
        edge.color = "red", 
-       edge.arrow.size = 0,
+       edge.arrow.size = 1,
        vertex.size=7,
        vertex.color="white", 
        layout=layout,
@@ -80,6 +80,24 @@ DynamicPlot <- function(g_eu) {
          vertex.color="yellow",
          vertex.size=deg*L/20,
          layout=layout)
+}
+
+'Flow Plot'
+FlowPlot <- function(g_eu,D,T) {
+  C  = curve_multiple(g_eu, start = 1)
+  E(g_eu)$weight <- edge.betweenness(g_eu)
+  deg <- degree(g_eu)
+  layout <- layout_nicely(g_eu)+7
+  T = Abs(T)
+  
+  plot(g_eu, 
+       edge.width=T, 
+       edge.color = "red", 
+       edge.arrow.size = 0,
+       vertex.size=7,
+       vertex.color="white", 
+       layout=layout,
+       edge.curved = C)
 }
 
 'Twin Histogram'
@@ -164,7 +182,7 @@ EuMap <- function(g,donnees) {
   # Background map
   map('world',
       col="#b2b2b2", fill=TRUE, bg="white", lwd=0.05,
-      mar=rep(0,4),border=0, xlim=c(-10,30), ylim=c(35,73) 
+      mar=rep(0,4),border=0, xlim=c(-10,30), ylim=c(35,70) 
   )
   
   # Dot for cities

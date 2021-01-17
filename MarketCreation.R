@@ -14,17 +14,19 @@ Market <- function(SwitchValue) {'switch Value to choose the generation type'
   Demand <- c(rep(0,L))
   Export <- c(rep(0,L))
   
-  Total = 100;
+  Total = 2000;
   
   if(SwitchValue == 1){'repartition uniforme si Packets est grand'
-    Packets = 2000;
+    Packets = 1000;
     for(i in 1:Packets){
       k = floor(runif(2,1,L+1))
       Production[k[1]] = Production[k[1]] + Total/Packets
       Demand[k[2]] = Demand[k[2]] + Total/Packets
     }
-  }else if(SwitchValue == 2){
-    
+  }else if(SwitchValue == 2){'repartition faite a la main pour verif'
+    #ordre : GE BE FR UK IR
+    Production <- c(20, 20, 30, 20, 10)
+    Demand <- c(10, 20, 10, 30, 30)
   }
   
   for(i in 1:L){
